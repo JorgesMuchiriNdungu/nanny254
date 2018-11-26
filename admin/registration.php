@@ -124,40 +124,64 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="index.html"><i class="fa fa-pencil-square-o"></i> <span> User Dashboard</span></a></li>
+            <li><a href="dashboard.php"><i class="fa fa-pencil-square-o"></i> <span> User Dashboard</span></a></li>
          
           </ul>
         </li>
         <li class="treeview">
           <a href="#">
             <i class="fa fa-files-o"></i>
-            <span>Posts</span>
+            <span>Application</span>
          <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="viewposts.php"><i class="fa fa-circle-o"></i> View Posts</a></li>
-            <li><a href="posts.php"><i class="fa fa-circle-o"></i>Add Post </a></li>
+            <li><a href="viewapplication.php"><i class="fa fa-circle-o"></i> View Application</a></li>
+           
        
           </ul>
         </li>
        <li class="treeview">
           <a href="#">
             <i class="fa fa-laptop"></i>
-            <span>Counsellors</span>
+            <span>Nannies</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="viewcounsellors.php"><i class="fa fa-circle-o"></i>View Counsellors</a></li>
-                        <li><a href="counsellor.php"><i class="fa fa-circle-o"></i>Add Counsellor</a></li>
+            <li><a href="viewnannies.php"><i class="fa fa-circle-o"></i>View Nannies</a></li>
+                       
           
          
         </li>
        </ul>
-     
+<li class="treeview">
+     <ul class="treeview-menu">
+            <li><a href="viewapplication.php"><i class="fa fa-circle-o"></i> View Application</a></li>
+           
+       
+          </ul>
+        </li>
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-file"></i>
+            <span>Reports</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="backgroundcheck.php"><i class="fa fa-circle-o"></i>Background Check Report</a></li>
+            <li><a href="employment_status.php"><i class="fa fa-circle-o"></i>Employment Status Report</a></li>
+            <li><a href="user_report.php"><i class="fa fa-circle-o"></i>User Status Report</a></li>
+            <li><a href="education_level.php"><i class="fa fa-circle-o"></i>Education Level Status Report</a></li>
+            <li><a href="nhif_status.php"><i class="fa fa-circle-o"></i>NHIF Memebrship Status Report</a></li>
+            <li><a href="gender_status.php"><i class="fa fa-circle-o"></i>Gender Status Report</a></li>
+
+        </li>
+       </ul>
         <li class="treeview">
           <a href="#">
             <i class="fa fa-user"></i>
@@ -176,19 +200,18 @@
     </section>
     <!-- /.sidebar -->
   </aside>
-
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-      Manage Counsellor
+      Manage User
    
       </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
         <li><a href="#">Manage</a></li>
-        <li class="active">Register Counsellor</li>
+        <li class="active">Register User</li>
       </ol>
     </section>
 
@@ -200,7 +223,7 @@
           <!-- general form elements -->
           <div class="box box-primary">
             <div class="box-header with-border">
-              <h3 class="box-title">Register New Counsellor</h3>
+              <h3 class="box-title">Register New User</h3>
             </div>
             <!-- /.box-header -->
             <!-- form start -->

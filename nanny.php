@@ -77,7 +77,8 @@
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item scroll" data-toggle="modal" aria-pressed="false"
                                             data-target="#exampleModal3">Sign in</a>
-                                <a class="dropdown-item" href="profile.php">Profile</a>
+                                <a class="dropdown-item" href="nannyprofile.php">Profile</a>
+                                  <a class="dropdown-item" href="myemployer.php">Employer Profile</a>
                                 <div class="dropdown-divider"></div>
                               
                             </div>

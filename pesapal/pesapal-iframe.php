@@ -12,6 +12,7 @@ $reference =random_string(10).date('s');//unique order id of the transaction, ge
 $first_name = $_POST['first_name'];
 $last_name = $_POST['last_name'];
 $email = $_POST['email'];
+$gender = $_POST['gender_id'];
 $phoneno= $_POST['phoneno'];//ONE of email or phonenumber is required
 $password = md5($_POST["password"]);
 
@@ -20,8 +21,8 @@ $username='nanny';
 $usertype='2';
 
 
-     $insert_qry = "INSERT INTO nannies (first_name,last_name,phoneno,email,password,amount,reference) 
-      VALUES ('$first_name', '$last_name','$phoneno', '$email','$password','$amount','$reference')";
+     $insert_qry = "INSERT INTO nannies (first_name,last_name,phoneno,email,password,amount,reference,gender_id) 
+      VALUES ('$first_name', '$last_name','$phoneno', '$email','$password','$amount','$reference',$gender)";
 
 
     if ($conn->query($insert_qry) === TRUE){
@@ -62,13 +63,13 @@ $phoneno= $_POST['phoneno'];//ONE of email or phonenumber is required
 $password = md5($_POST["password"]);
 $username='parents';
 $usertype='2';
-
+$gender = $_POST['gender_id'];
 
 
 $date_done=date('Y-m-d H:i:s');
 
-      $insert_qry =  "INSERT INTO parents (first_name,last_name,phoneno,email,password,amount,reference) 
-      VALUES ('$first_name', '$last_name','$phoneno', '$email','$password','$amount','$reference')";
+      $insert_qry =  "INSERT INTO parents (first_name,last_name,phoneno,email,password,amount,reference,gender_id) 
+      VALUES ('$first_name', '$last_name','$phoneno', '$email','$password','$amount','$reference',$gender)";
     if ($conn->query($insert_qry) === TRUE){
       
       echo "";
@@ -143,7 +144,7 @@ $date_done=date('Y-m-d H:i:s');
 
 
 
-$callback_url = 'http://localhost/Nanny/home.php'; //redirect url, the page that will handle the response from pesapal.
+$callback_url = 'http://localhost/Nanny/index.php'; //redirect url, the page that will handle the response from pesapal.
 
 $post_xml = "<?xml version=\"1.0\" encoding=\"utf-8\"?><PesapalDirectOrderInfo xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" Amount=\"".$amount."\" Description=\"".$desc."\" Type=\"".$type."\" Reference=\"".$reference."\" FirstName=\"".$first_name."\" LastName=\"".$last_name."\" Email=\"".$email."\" PhoneNumber=\"".$phonenumber."\" xmlns=\"http://www.pesapal.com\" />";
 $post_xml = htmlentities($post_xml);

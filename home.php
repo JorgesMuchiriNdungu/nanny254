@@ -67,16 +67,14 @@
                                     <li class="nav-item mr-lg-3 mt-lg-0 mt-3">
                                         <a class="nav-link scroll" href="#contact">Contact</a>
                                     </li>
-                                    <li class="nav-item dropdown mr-lg-3 mt-lg-0 mt-3">
+                               <li class="nav-item dropdown mr-lg-3 mt-lg-0 mt-3">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
                                 aria-haspopup="true" aria-expanded="false">
-                               <i class="far fa-user-circle"></i>Register
+                               Parent
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item scroll" data-toggle="modal" aria-pressed="false"
-                                            data-target="#exampleModal3">Nanny</a>
-                               <a class="dropdown-item scroll" data-toggle="modal" aria-pressed="false"
-                                            data-target="#exampleModal">Parent</a>
+                               
+                                  <a class="dropdown-item" href="employer.php">Nanny Profile</a>
                                 <div class="dropdown-divider"></div>
                               
                             </div>
@@ -147,15 +145,13 @@
               <option value="30+">30+</option>
             </select>
                                     </div>
-                                    <div class="form-group">
-                                        <label for="category" class="col-form-label">Category</label>
-                                                            <select class="form-control" name="category">
-                                                          
-              <option value="babysitter">Baby Sitter</option>
-              <option value="nanny">Nanny</option>
-              <option value="housekeper">House Keeper</option>
-            </select>
-                                    </div>
+                                  <select class="form-control" id="category" name="category">
+                                    <option value="Nanny">Nanny</option>
+                                    <option value="Domestic Manager">Domestic Manager</option>
+                                    <option value="House Keeper">House Keeper</option>
+                                  
+                                  
+                                  </select>
                                     <div class="form-group">
                                         <label for="password2" class="col-form-label">Location</label>
                                                                             <select class="form-control" name="location">

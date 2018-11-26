@@ -163,7 +163,7 @@ $data=mysqli_query($conn,"SELECT * FROM parents");
           </a>
           <ul class="treeview-menu">
             <li><a href="viewnannies.php"><i class="fa fa-circle-o"></i>View Nannies</a></li>
-                        <li><a href="nannies.php"><i class="fa fa-circle-o"></i>Add Nanny</a></li>
+                         <li><a href="nhif.php"><i class="fa fa-circle-o"></i>Nannies NHIF Data</a></li> 
           
          
         </li>
@@ -234,6 +234,8 @@ $data=mysqli_query($conn,"SELECT * FROM parents");
 window.onload = function() {
 
 var chart = new CanvasJS.Chart("chartContainer", {
+
+
   theme: "light2", // "light1", "light2", "dark1", "dark2"
   exportEnabled: true,
   animationEnabled: true,
@@ -262,7 +264,8 @@ chart.render();
 </script>
 
 
-
+ Verified Nannies = <?php echo verification()?><br>
+ Pending Nannies = <?php echo pending()?>
 
 
                 </div>

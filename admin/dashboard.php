@@ -147,7 +147,7 @@ $first_name = $_SESSION["authlog"]["first_name"];
           </a>
           <ul class="treeview-menu">
             <li><a href="viewapplication.php"><i class="fa fa-circle-o"></i> View Application</a></li>
-            <li><a href=application.php"><i class="fa fa-circle-o"></i>Add Post </a></li>
+           
        
           </ul>
         </li>
@@ -161,11 +161,18 @@ $first_name = $_SESSION["authlog"]["first_name"];
           </a>
           <ul class="treeview-menu">
             <li><a href="viewnannies.php"><i class="fa fa-circle-o"></i>View Nannies</a></li>
-                        <li><a href="nannies.php"><i class="fa fa-circle-o"></i>Add Nanny</a></li>
+                 <li><a href="nhif.php"><i class="fa fa-circle-o"></i>Nannies NHIF Data</a></li>         
           
          
         </li>
        </ul>
+<li class="treeview">
+     <ul class="treeview-menu">
+            <li><a href="viewapplication.php"><i class="fa fa-circle-o"></i> View Application</a></li>
+           
+       
+          </ul>
+        </li>
         <li class="treeview">
           <a href="#">
             <i class="fa fa-file"></i>
@@ -175,10 +182,10 @@ $first_name = $_SESSION["authlog"]["first_name"];
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="backgroundcheck.php"><i class="fa fa-circle-o"></i>View Background Check Report</a></li>
-            <li><a href="employment_status.php"><i class="fa fa-circle-o"></i>View Employment Status Report</a></li>
-            <li><a href="user_report.php"><i class="fa fa-circle-o"></i>View User Status Report</a></li>
-            <li><a href="education_level.php"><i class="fa fa-circle-o"></i>View Education Level Status Report</a></li>
+            <li><a href="backgroundcheck.php"><i class="fa fa-circle-o"></i>Background Check Report</a></li>
+            <li><a href="employment_status.php"><i class="fa fa-circle-o"></i>Employment Status Report</a></li>
+            <li><a href="user_report.php"><i class="fa fa-circle-o"></i>User Status Report</a></li>
+            <li><a href="education_level.php"><i class="fa fa-circle-o"></i>Education Level Status Report</a></li>
             <li><a href="nhif_status.php"><i class="fa fa-circle-o"></i>NHIF Memebrship Status Report</a></li>
             <li><a href="gender_status.php"><i class="fa fa-circle-o"></i>Gender Status Report</a></li>
 
@@ -234,7 +241,7 @@ $first_name = $_SESSION["authlog"]["first_name"];
             <div class="icon">
               <i class="fa fa-user-circle-o"></i>
             </div>
-            <a href="mails_l_0.php" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+            <a href="viewnannies.php" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
           </div>
         </div>
         <!-- ./col -->
@@ -249,7 +256,7 @@ $first_name = $_SESSION["authlog"]["first_name"];
             <div class="icon">
               <i class="ion ion-person-add"></i>
             </div>
-            <a href="more-userprofile.php" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+            <a href="viewnannies.php" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
           </div>
         </div>
         <!-- ./col -->
@@ -264,7 +271,7 @@ $first_name = $_SESSION["authlog"]["first_name"];
             <div class="icon">
               <i class="fa fa-user-times"></i>
             </div>
-            <a href="overview_cash.php" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+            <a href="viewnannies.php" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
           </div>
         </div>
         <!-- ./col -->
@@ -279,7 +286,7 @@ $first_name = $_SESSION["authlog"]["first_name"];
             <div class="icon">
               <i class="fa fa-user-o"></i>
             </div>
-            <a href="edit_p_reg.php" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+            <a href="viewnannies.php" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
           </div>
         </div> 
   
@@ -294,7 +301,7 @@ $first_name = $_SESSION["authlog"]["first_name"];
             <div class="icon">
               <i class="fa fa-users"></i>
             </div>
-            <a href="gen_invoice.php" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+            <a href="viewparents.php" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
           </div>
         </div>
         <!-- ./col -->
@@ -309,7 +316,7 @@ $first_name = $_SESSION["authlog"]["first_name"];
             <div class="icon">
               <i class="fa fa-file"></i>
             </div>
-            <a href="mails_l_0.php" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+            <a href="viewapplication.php" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
           </div>
         </div>
         <!-- ./col -->
@@ -324,7 +331,7 @@ $first_name = $_SESSION["authlog"]["first_name"];
             <div class="icon">
               <i class="fa fa-user-plus"></i>
             </div>
-            <a href="new_p_reg.php" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+            <a href="" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
           </div>
         </div>
         <!-- ./col -->
@@ -339,7 +346,7 @@ $first_name = $_SESSION["authlog"]["first_name"];
             <div class="icon">
               <i class="ion-cash"></i>
             </div>
-            <a href="new_p_reg_priv.php" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+            <a href="" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
           </div>
         </div> 
 
@@ -354,7 +361,7 @@ $first_name = $_SESSION["authlog"]["first_name"];
             <div class="icon">
               <i class="fa fa-user-o"></i>
             </div>
-            <a href="revisit_reg.php" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+            <a href="viewnannies.php" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
           </div>
         </div>
         <!-- ./col -->

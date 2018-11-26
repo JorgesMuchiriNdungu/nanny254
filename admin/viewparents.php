@@ -7,7 +7,7 @@
 include('connection.php');
 include('checklogin.php');
 //$spot_users = "SELECT user_id, full_name, email, phone_number,pick_file, username, password, Address,usertype FROM users2 ";
-$spot_users = "SELECT * FROM nannies ";
+$spot_users = "SELECT * FROM parents ";
 
 ?>
 <!DOCTYPE html>
@@ -169,7 +169,7 @@ $spot_users = "SELECT * FROM nannies ";
           </a>
           <ul class="treeview-menu">
             <li><a href="viewnannies.php"><i class="fa fa-circle-o"></i>View Nannies</a></li>
-              <li><a href="nhif.php"><i class="fa fa-circle-o"></i>Nannies NHIF Data</a></li>          
+                       
           
          
         </li>
@@ -234,16 +234,8 @@ $spot_users = "SELECT * FROM nannies ";
      <th>Name</th>
      <th>Email</th>
      <th>Phone Number</th>
-     <th>Salary</th>
-
-     <th>Category</th>
-     <th>Location</th>
-      <th>Employement Status</th>
-     <th>Employer</th>
-
-     <th>Rating</th>
      <th>Comments</th>
-     <th>Background Check</th>
+     <th>Rating</th>
      <th>Action</th>
     
 <script>
@@ -267,26 +259,13 @@ $result_spot_users = $conn->query($spot_users);
         <td><?php echo $spot_users_row["first_name"]; ?><?php echo $spot_users_row["last_name"]; ?></td>
   
               <td><?php echo $spot_users_row["email"]; ?></td>
-        <td><?php echo $spot_users_row["phoneno"]; ?></td>
-         <td><?php echo $spot_users_row["salary"]; ?></td>
+          <td><?php echo $spot_users_row["phoneno"]; ?></td>
    
-  
-         <td><?php echo $spot_users_row["category"]; ?></td>
-         <td><?php echo $spot_users_row["location"]; ?></td>
-          <td><?php echo $spot_users_row["status"]; ?></td>
-         <td><?php echo $spot_users_row["employer"]; ?></td>
          <td><?php echo $spot_users_row["rating"]; ?></td>
          <td><?php echo $spot_users_row["comments"]; ?></td>
-         <td><?php echo $spot_users_row["vetting"]; ?></td>
-
  
- <td>  
-      <a href="deletep.php?id=<?php echo $spot_users_row["id"]; ?>" 
-    onclick="return confirm('Are you sure you wish to delete this Record?');">
-        <span class="delete" title="Delete"> <i class="fa fa-trash"></i></span></a>
 
 
-        </td>
                        <?php
   
 

@@ -605,7 +605,7 @@ function message() {
                             <input type="password" class="form-control" placeholder=" " name="Confirm Password" id="password2"
                                 required="">
                         </div>
-               
+              
                           <div class="form-group">
                             <label for="recipient-name" class="col-form-label">Registration Fee</label>
                             <input type="text" class="form-control" placeholder=" "  value = " 500" name="amount" 

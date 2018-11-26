@@ -236,9 +236,7 @@ $result_spot_users = $conn->query($spot_users);
                                 <div class="right-w3l">
                            
                         </div>
-                                        <div class="right-w3l">
-                                        <input type="submit" class="form-control" name="update" value="update">
-                                    </div>
+                                      
                         </fieldset>
 
 
@@ -262,7 +260,7 @@ $result_spot_users = $conn->query($spot_users);
         </div>
     </div>
 
-</form>
+
     <!-- //login -->
     <!-- register -->
     <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1"
@@ -383,7 +381,6 @@ $result_spot_users = $conn->query($spot_users);
                                 <label class="control-label">Job Category Applying for</label>
                             
                                   <select class="form-control" id="category" name="category">
-                                    <option value="">please select</option>
                                     <option value="Nanny">Nanny</option>
                                     <option value="Domestic Manager">Domestic Manager</option>
                                     <option value="House Keeper">House Keeper</option>
@@ -515,11 +512,7 @@ $result_spot_users = $conn->query($spot_users);
                           </div>  
 
                              
-                                       <div class="form-group">
-                            <label for="recipient-name" class="col-form-label">If Yes Explain </label>
-                            <input type="text"   class="form-control" placeholder=" " name="ypsychological" >
                                 
-                        </div> 
 
                         
                         <button type="button"   onClick='incr()' class="next action-button"  data-toggle="modal" data-target="#exampleModal6" data-dismiss="modal">

@@ -5,9 +5,9 @@ include('connection.php');
 
 if(isset($_POST["create"])){
 
-	$full_name = $_POST["full_name"];
+	$first_name = $_POST["first_name"];
 	$email = $_POST["email"]; 
-    $phone_number = $_POST["phone_number"];
+    $phoneno = $_POST["phoneno"];
 	
 	$username = $_POST["username"];
 	$hash_password = md5($_POST["password"]);
@@ -15,7 +15,7 @@ if(isset($_POST["create"])){
 
 	// $usertype = $_SESSION["usertype"];
 
-	$add_user = "INSERT INTO users2 (full_name, email, phone_number,username, password, usertype) VALUES ('$full_name', '$email', '$phone_number','$username','$hash_password', '$usertype')";
+	$add_user = "INSERT INTO users2 (first_name, email, phoneno,username, password, usertype) VALUES ('$first_name', '$email', '$phoneno','$username','$hash_password', '$usertype')";
 	
 	if($conn->query($add_user) === TRUE){
 	
